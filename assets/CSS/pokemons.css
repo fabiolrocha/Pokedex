@@ -1,0 +1,87 @@
+.pokemons{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.pokemon{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    margin: 0.5rem;
+    border-radius: 1.5rem;
+    background-color: rgb(44, 211, 141);
+    color: aliceblue;
+}
+
+.pokemon .number{
+    color: #1caf65;
+    text-align: right;
+}
+
+.pokemon .nome{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.pokemon .stats{
+    margin-top: -0.4rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;        
+}
+
+.pokemon .stats .tipos{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-size: 0.7rem;
+    flex-grow: 1;
+}
+
+.pokemon .stats .tipo-planta{
+    padding: 0;
+    background-color: #21c070;
+    border-radius: 1rem;
+    margin: 0.3rem;
+    padding: 0.4rem 0.7rem;
+    text-align: center;
+}
+
+.pokemon .stats .tipo-veneno{
+    padding: 0;
+    background-color: #8021c0;
+    border-radius: 1rem;
+    margin: 0.3rem;
+    padding: 0.4rem 0.7rem;
+    text-align: center;
+}
+
+.pokemon .stats img{ 
+    margin-left: -0.4rem;
+    width: 65%;
+    height: 100%;
+    margin-top: -0.3rem;
+}
+
+@media (min-width: 360px){
+    .pokemons{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 768px){
+    .pokemons{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 1200px){
+    
+    .pokemons{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
